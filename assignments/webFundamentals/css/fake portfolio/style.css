@@ -11,6 +11,10 @@
     padding: 1em;
 }
 
+#header h2 {
+    margin-top: 0.25em;
+}
+
 h1 {
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
@@ -24,32 +28,48 @@ h1 {
 #top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1em;    
 }
 
 #top img {
     border: 5px solid #ecebec;
     width: 40%;
     height: 40%;
+    
 }
 
 #about {
     vertical-align: top;  
     width: 58%; 
-}
-
-#about h2 {
-    color: #ecebec;
-    background: linear-gradient(#dddcdd, #929192, #dddcdd);
-    padding: 0.25em;
+    height: 40%
 }
 
 #text {
     background: linear-gradient(to right, #ecebec, #c3a4ba); 
     padding: 0.5em;
-    height: 80%;
 }
 
 #text p, a {
     margin: 0.5em;
     
 }
+
+#mid {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mid img {
+    width: 100%;
+}
+.card {
+    margin: 1em;
+}
+
+h2, h3 {
+    color: #ecebec;
+    background: linear-gradient(#dddcdd, #929192, #dddcdd);
+    padding: 0.25em;
+}
+
+
