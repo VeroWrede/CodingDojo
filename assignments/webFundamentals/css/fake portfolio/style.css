@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+    border: 0;
+    }
+
+#header {
+    background: linear-gradient(#ecebec, white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+h1 {
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+#wrapper {
+    background: radial-gradient(#8b7183,#422137);
+    padding: 1em;
+    
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top img {
+    border: 5px solid #ecebec;
+    width: 40%;
+    height: 40%;
+}
+
+#about {
+    vertical-align: top;  
+    width: 58%; 
+}
+
+#about h2 {
+    color: #ecebec;
+    background: linear-gradient(#dddcdd, #929192, #dddcdd);
+    padding: 0.25em;
+}
+
+#text {
+    background: linear-gradient(to right, #ecebec, #c3a4ba); 
+    padding: 0.5em;
+    height: 80%;
+}
+
+#text p, a {
+    margin: 0.5em;
+    
+}
