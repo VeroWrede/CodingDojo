@@ -4,6 +4,12 @@
     border: 0;
     }
 
+#wrapper {
+    background: radial-gradient(#8b7183,#422137);
+    padding: 1em;
+    
+}
+
 #header {
     background: linear-gradient(#ecebec, white);
     display: flex;
@@ -13,12 +19,6 @@
 
 #header h2 {
     margin-top: 0.25em;
-}
-
-#wrapper {
-    background: radial-gradient(#8b7183,#422137);
-    padding: 1em;
-    
 }
 
 #top {
@@ -97,10 +97,11 @@ h1 {
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
-h2, h3 {
+#wrapper h2, h3 {
     color: #ecebec;
     background: linear-gradient(#dddcdd, #929192, #dddcdd);
     padding: 0.25em;
+    margin: 0 15px;
 }
 
 p, a {
