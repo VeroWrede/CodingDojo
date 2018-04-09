@@ -58,12 +58,28 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-
-#mid img {
+ /* img ratio 1.8125 
+ in order to fill the image container 
+ with the image without having empty borders
+ i calculate the height-width ratio of the image
+ and set the container'swidth and height to that ratio*/
+.img-container {
+    width: 18em;
+    height: 9.93103448em;
+}
+.img-container img {
     width: 100%;
 }
 .card {
     margin: 1em;
+}
+
+#techs {
+    display: inline-block;
+}
+#techs img {
+    height: 3em;
+    margin: 0.5em;
 }
 
 h2, h3 {
