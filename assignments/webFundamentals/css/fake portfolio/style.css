@@ -15,10 +15,6 @@
     margin-top: 0.25em;
 }
 
-h1 {
-    font-family:"Comic Sans MS", cursive, sans-serif;
-}
-
 #wrapper {
     background: radial-gradient(#8b7183,#422137);
     padding: 1em;
@@ -41,22 +37,20 @@ h1 {
 #about {
     vertical-align: top;  
     width: 58%; 
-    height: 40%
-}
-
-#text {
-    background: linear-gradient(to right, #ecebec, #c3a4ba); 
-    padding: 0.5em;
-}
-
-#text p, a {
-    margin: 0.5em;
-    
+    height: 40%;
+    background: linear-gradient(to right, #ecebec, #c3a4ba);
 }
 
 #mid {
     display: flex;
     justify-content: space-between;
+}
+
+#footer {
+    background: linear-gradient(#ecebec, white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
  /* img ratio 1.8125 
  in order to fill the image container 
@@ -72,14 +66,35 @@ h1 {
 }
 .card {
     margin: 1em;
+    background: linear-gradient(to right, #ecebec, #c3a4ba);
 }
 
-#techs {
+.techs {
     display: inline-block;
+    background: linear-gradient(to right, #ecebec, #c3a4ba); 
+    padding: 0.5em;
+    padding-bottom: 1em;
 }
-#techs img {
+
+.techs img {
     height: 3em;
     margin: 0.5em;
+}
+
+.techs a {
+    background-color: rgb(155, 231, 41);
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 h2, h3 {
@@ -88,4 +103,8 @@ h2, h3 {
     padding: 0.25em;
 }
 
+p, a {
+    margin: 1em;
+    
+}
 
