@@ -6,7 +6,6 @@
 
 body {
     width: 1300px;
-    background-color: #71a81d;
 }
 
 img {
@@ -171,7 +170,23 @@ ol {
     border: 3px solid rgb(0, 153, 255);
     border-bottom: 3px solid white;
     height: 115px;
-    display: inline-block;
 }
+
+.bottom-box img {
+    display: inline-block;
+    vertical-align: top
+}
+
+.b3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 850px;
+    margin: 15px auto auto 20px;
+}
+
+.b3 p {
+    margin-bottom: 5px;
+}
+
 
 
