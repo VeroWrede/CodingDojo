@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+/* stles that repeat throughout the project */
+
+.header, .browse, .empty, .header button {
+    border: 1px solid #e0dddd; 
+}
+
+.main-buttons, .empty {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+body, .main {
+    width: 900px;
+}
+
+.box, a {
+    padding: 0 10px;
+
+}
+
+.header img, button, input, i, .box, h3, .bbox{
+    vertical-align: top;
+}
+
+.big-img, .box,  .box button {
+    width: 190px;
+}
+
+.tilt, .browse-store, h1, .box, .box img,  h3, .bbox, .footer p, a {
+    display: inline-block;
+}
+
+.main-buttons button:hover, .browse-store, .box button {
+    color: white;
+}
+
+ul, .footer p {
+    color: #3C4C5B;
+}
+
+.browse, .middle {
+    background-color: white;
+}
+
+li, p, a {
+    font-size: 13px;
+    
+}
+
+/* styling for individual elements */
+
+body {
+    height: 1300px;
+    margin: 25px;
+}
+
+.header {
+    border-radius: 10px;
+}
+
+    .header, button {
+        background: linear-gradient(white, #b6b5b5);
+    }
+
+    .header input, .fa-search {
+        margin-top: 15px;
+    }
+
+
+    .header button {
+        padding: 21px;
+        border-left: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .fa-search {
+        padding-top: 8px;
+        position: relative;
+        left: 30px;
+        margin-left: 130px;
+        color: grey;
+    }
+
+    .cup{
+        width: 80px;
+        height: 64px;
+    }
+
+    .arrow {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 35px;
+        margin-top: 13px;
+    }
+
+    input {
+        height: 30px;
+        width: 150px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+.main {
+    padding-top: 20px;
+    display: block;
+}
+
+    .main-buttons {
+        width: 897px;
+        background: linear-gradient(#7a7d81, #3C4C5B);
+        padding: 2px;
+        
+    }
+
+    .tilt {
+        margin-top: 3px;
+        font-size: 25px;
+        color: #bebebe;
+    }
+
+   .main-buttons button {
+       color: #8dc1e4;
+       background: linear-gradient(#7a7d81, #3C4C5B);
+       padding: 12px;
+       font-weight: bolder;
+   } 
+
+.browse {
+    margin-top: 10px;
+    padding: 15px 0;
+}
+
+    h1 {
+        color: #e0dddd;
+        font-weight: lighter;
+        padding: 0 40px;
+        margin: 20px;
+        border-right: 1px solid #e9e7e7;
+        
+    }
+
+    .browse-store {
+        font-size: 20px;
+        padding: 5px 25px 9px;
+        margin: 20px 15px 15px;
+        border-radius: 5px;
+        background: linear-gradient(#8dc1e4, #487592);
+    }
+
+    .arrows-text {
+        margin-left: 50px;
+    }
+
+.middle {
+    padding: 25px 20px;
+    outline: 1px solid #e0dddd;
+    background: linear-gradient(white, #ebebec);
+    width: 857px;
+    margin-left: 2px; 
+    
+}  
+
+    .box {
+        margin: 20px 0;
+    }
+
+    .sm1 {
+        width: 23px;
+    }
+
+    .sm2 {
+        width: 30px;
+    }
+
+    h3 {
+        padding: 3px 0 0 5px;;
+    }
+
+     .box p {
+         margin: 15px 0;   
+    }
+
+    .box button {
+        background: linear-gradient(lightblue, #51a9e4);
+        padding: 8px;
+        border-radius: 5px; 
+    }
+
+    .b2 {
+        border-left: 1px solid#e0dddd;
+    }
+
+    .b2 button {
+        margin-top: 13px;
+    }
+
+    .b2, .b3 {
+        border-right: 1px solid #e0dddd;
+    }
+
+    .b3 button {
+        margin-top: 5px;
+    }
+
+    .b4 button {
+        margin-top: 17px;
+    }
+
+.empty {
+    height: 60px;
+    background-color: #ebebec;
+    margin-bottom: 40px;
+}
+
+.bbox {
+    margin: 12px;
+}
+    h4 {
+        border-bottom: 1px solid #e0dddd;
+        width: 120px;
+        padding-bottom: 15px; 
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+.footer {
+    border-top: 1px solid #e0dddd;
+    margin: 30px;
+    padding-top: 25px;
+}
+
+    a {
+        border-left: 1px solid #b6b5b5;
+        border-right: 1px solid #b6b5b5;
+        margin: 5px;
+        color: blue;
+        text-decoration: underline;
+    }
+
