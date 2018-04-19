@@ -4,7 +4,7 @@ function GenerateRandomNumOfCoins(){
 }
 
 function GenerateRandomNum(){
-  var num = Math.floor(Math.random()*50) + 51;
+  var num = Math.floor(Math.random()*50) + 101;
   return num;
 }
 
