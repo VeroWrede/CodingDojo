@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students and Instructors</title>
+    <script type="text/javascript">
+     	"use strict";
+
+		var students = [
+		  {first_name:  'Michael', last_name : 'Jordan'},
+		  {first_name : 'John', last_name : 'Rosales'},
+		  {first_name : 'Mark', last_name : 'Guillen'},
+		  {first_name : 'KB', last_name : 'Tonel'}
+		]
+
+		var users = {
+			'Students': [
+			     {first_name:  'Michael', last_name : 'Jordan'},
+			     {first_name : 'John', last_name : 'Rosales'},
+			     {first_name : 'Mark', last_name : 'Guillen'},
+			     {first_name : 'KB', last_name : 'Tonel'}
+			],
+			'Instructors': [
+			     {first_name : 'Michael', last_name : 'Choi'},
+			     {first_name : 'Martin', last_name : 'Puryear'}
+			]
+		}
+
+		for(var student in students){
+		  console.log(students[student].first_name, students[student].last_name);
+		}
+
+		console.log('---------------------------');
+		for(var key in users){
+		  var counter = 1
+		  var idx = 0;
+		  console.log(key);
+		  while(idx < users[key].length){
+		    var num = Math.floor(Math.random()*15);
+		    console.log(counter,'-', users[key][idx].first_name, users[key][idx].last_name,'-', num );
+		    idx ++;
+		    counter ++;
+		  }
+		}
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

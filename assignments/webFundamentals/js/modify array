@@ -2,16 +2,10 @@ var ary = [2, 'word', 4, true, 6, 'uon'];
 console.log('len is  ',ary.length);
 
 
-for(var idx = 0; idx < ary.lenght; idx++){
-  console.log(idx);
-  if(typeof ary[idx] !== 'number'){
-    console.log(ary[idx]);
+for(var idx = 0; idx < ary.length; idx++){
 
-    ary.splice(idx, idx+1)
+  if(typeof ary[idx] != 'number'){
+    ary.splice(idx, 1);
   }
   console.log(ary);
-}
-
-for(var i = 0; i <10; i++){
-  console.log(i);
 }
