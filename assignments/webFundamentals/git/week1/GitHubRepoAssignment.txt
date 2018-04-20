@@ -1,0 +1,37 @@
+mkdir gitRepo
+
+cd gitRepo
+
+git init
+
+git remote add origin 'https://github.......'
+
+git status
+
+cd CodingDojo
+
+touch style.css aboutMe.txt 
+
+git add -A 
+
+git commit -m ' initializing coding dojo repository with style.css and aboutMe.txt files'
+
+touch index.html
+
+git add -A
+
+git commit - m '....'
+
+git add -A
+
+git commit -m 'updating aboutMe.txt'
+
+git add -A
+
+git commit -m ' adding movie to about me'
+
+git log
+
+git reset  1c02eba886f26f571a323b7c1008a5d85b3341e2
+
+git log

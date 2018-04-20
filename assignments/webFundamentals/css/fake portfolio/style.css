@@ -1,0 +1,110 @@
+* {
+	padding: 0;
+	margin: 0;
+    border: 0;
+    }
+
+#wrapper {
+    background: radial-gradient(#8b7183,#422137);
+    padding: 1em;
+    
+}
+
+#header {
+    background: linear-gradient(#ecebec, white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#header h2 {
+    margin-top: 0.25em;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;    
+}
+
+#top img {
+    border: 5px solid #ecebec;
+    width: 40%;
+    height: 40%;
+    
+}
+
+#about {
+    vertical-align: top;  
+    width: 58%; 
+    height: 40%;
+    background: linear-gradient(to right, #ecebec, #c3a4ba);
+}
+
+#mid {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer {
+    background: linear-gradient(#ecebec, white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+ /* img ratio 1.8125 
+ in order to fill the image container 
+ with the image without having empty borders
+ i calculate the height-width ratio of the image
+ and set the container'swidth and height to that ratio*/
+.img-container {
+    width: 18em;
+    height: 9.93103448em;
+}
+.img-container img {
+    width: 100%;
+}
+.card {
+    margin: 1em;
+    background: linear-gradient(to right, #ecebec, #c3a4ba);
+}
+
+.techs {
+    display: inline-block;
+    background: linear-gradient(to right, #ecebec, #c3a4ba); 
+    padding: 0.5em;
+    padding-bottom: 1em;
+}
+
+.techs img {
+    height: 3em;
+    margin: 0.5em;
+}
+
+.techs a {
+    background-color: rgb(155, 231, 41);
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+#wrapper h2, h3 {
+    color: #ecebec;
+    background: linear-gradient(#dddcdd, #929192, #dddcdd);
+    padding: 0.25em;
+}
+
+p, a {
+    margin: 1em;
+    
+}
+

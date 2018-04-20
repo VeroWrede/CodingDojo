@@ -1,0 +1,2 @@
+this is as an attempt in recreating thios web page in a responsive way so far.
+non responsive solution will follow soon.

@@ -1,0 +1,30 @@
+$ ls -R
+.:
+iOS  mean  netCore  python  ruby  webFundamentals
+
+./iOS:
+about.txt
+
+./mean:
+about.txt
+
+./netCore:
+about.txt
+
+./python:
+about.txt
+
+./ruby:
+about.txt
+
+./webFundamentals:
+about.txt  css  git  html  js
+
+./webFundamentals/css:
+
+./webFundamentals/git:
+
+./webFundamentals/html:
+indentation.html
+
+./webFundamentals/js:

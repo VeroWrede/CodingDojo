@@ -1,0 +1,19 @@
+- go to Desktop : cd Desktop
+
+- make a directory called test: mkdir test
+
+- create index.html, ... files: touch index.htmal, touch ...
+
+- copying index.html: cp index.html index2.html
+
+- remove style.css in test dir: 'cd test' then 'rm style.css' 
+
+- back to desktop and create direcory destination: ' cd ..' then 'mkdir destination'
+
+- moving index2.hmtl from test to destination: mv index2.html ../destination/
+
+- destination now holds one file : index.html (use ls)
+
+- delete destination:cd to destktop then use 'rm -rf destination'
+
+-
