@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="../jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(console).ready(function(){
+
+            $('img').click(function(e) {
+                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+                var newSrc = $(this).attr('data-alt-src');
+                console.log('var newSrc is : ',newSrc);
+                $('this').attr("src", $(this).attr('data-alt-src'));
+                console.log('final src : ',$(this).attr("src"));
+                
+                
+            });
+        })    
+            
+    </script>
+</head>
+<body>
+    <img src='img/ninja0.png' data-alt-src='img/cat0.png' />
+    <img src='img/ninja1.png' data-alt-src='img/cat1.png' />
+    <img src='img/ninja2.png' data-alt-src='img/cat2.png' />
+    <img src='img/ninja3.png' data-alt-src='img/cat3.png' />
+    <img src='img/ninja4.png' data-alt-src='img/cat4.png' />
+    
+</body>
+</html>
