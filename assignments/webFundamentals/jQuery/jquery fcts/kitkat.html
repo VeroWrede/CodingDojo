@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <script src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('h1').click(function(){
+                $('h1').text('Try to guess what your cat can eat!');
+            });
+
+            $('.yes').click(function(){
+                $('.yes').slideUp("slow", function(){
+                    $('.yes').replaceWith("<h3>Yes!</h3><h4>Your cat is still alive!!</h4>");
+                    $('.cat').hide("slow", function(){
+                        $('.cat-container').offset({left: 150});
+                    $('.cat').show();
+                    });
+                }) 
+            });
+
+            $('.no').click(function(){
+                $('.no').slideUp("slow", function(){
+                    $('.no').replaceWith("<h3>Uh oh!</h3><h4>better run to the vet!!</h4>");
+                    $('.cat').hide("slow", function(){
+                        $('.cat-container').offset({left: -150});
+                    $('.cat').show();
+                    });
+                }) 
+            });
+
+            $('.maybe').click(function(){
+                $('.maybe').fadeOut("fast").fadeIn("fast").fadeOut("fast").fadeIn("fast").slideUp("slow", function(){
+                    $('.maybe').replaceWith("<h3>mhhh</h3><h4>Maybe. Some bamboo is ok, some isn't. Call the vet to find out.</h4>");
+                }) 
+            });
+
+        })
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>What may your cat eat?</h1>
+    </div>
+    <div class="main">
+        <div class="choice-item">
+            <h3>Roses?</h3>
+            <img class="roses yes" src="img/roses.jpg" alt="rose image">
+        </div>
+        <div class="choice-item">
+            <h3>Aloe?</h3>
+            <img class="aloe no" src="img/aloe.jpg" alt="aloe image">
+        </div>
+        <div class="choice-item">
+            <h3>Bamboo?</h3>
+            <img class="bamboo maybe" src="img/bamboo.jpg" alt="bamboo image">
+        </div>
+
+        <div class="choice-item">
+            <h3>Aspirin?</h3>
+            <img class="aspirin no" src="img/aspirin.jpg" alt="aspirin image">
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="cat-container">
+            <img class="cat" src="img/cat.jpg" alt="cat image">
+        </div>
+
+
+    </div>
+      
+  </body>
+</html>

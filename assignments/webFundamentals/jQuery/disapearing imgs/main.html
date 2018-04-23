@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="../jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('img').click(function(e){
+                $(this).fadeOut("slow");
+                console.log(e);
+                
+            });
+            $('button').click(function(e){
+                $('img').show();
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div class="images">
+        <img src="img/chams.jpg" alt="chamelions">
+        <img src="img/mina.jpg" alt="cat">
+        <img src="img/water.jpg" alt="sealife">
+        <img src="img/mina.jpg" alt="cat">
+        <img src="img/water.jpg" alt="sealife">
+        <img src="img/chams.jpg" alt="chamelions">
+        <img src="img/mina.jpg" alt="cat">
+        <img src="img/water.jpg" alt="sealife">
+    </div>
+    <button type="button">Reset</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 225px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+
+
+h4 {
+    width: 225px;
+}
+
+.choice-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer {
+    background-image: url("img/toggle.png");
+    height: 100px;
+    width: 530px;
+}
+
+.cat-container {
+    text-align: center;
+
+}
+.cat {
+    height: 70px;
+    margin: 18px;
+}
+
+
+
