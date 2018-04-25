@@ -1,3 +1,5 @@
+<!-- unfinished version  -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,14 +11,28 @@
         $(console).ready(function(){
 
             $('img').click(function(e) {
-                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
-                var newSrc = $(this).attr('data-alt-src');
-                console.log('var newSrc is : ',newSrc);
-                $('this').attr("src", $(this).attr('data-alt-src'));
-                console.log('final src : ',$(this).attr("src"));
+                // console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+                // var newSrc = $(this).attr('data-alt-src');
+                // console.log('var newSrc is : ',newSrc);
+                // $(this).attr('src', $(this).attr('data-alt-src'));
+                // console.log('final src : ',$(this).attr("src"));
                 
                 
             });
+
+            $('img').click(function(e){
+                var cat = $(this).attr('data-alt-src');
+                var ninja = $(this).attr('src');
+                if(this.src[4] == 'n'){
+                    $(this).attr(cat);
+                }
+                console.log(this.src);
+                console.log();
+                
+
+                
+                
+            })
         })    
             
     </script>
