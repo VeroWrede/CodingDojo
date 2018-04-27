@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            var baseUrl = 'http://pokeapi.co/media/sprites/pokemon/';
+            var png = '.png';
+            var idx = 1;
+
+            $('button').click(function(){
+                console.log(baseUrl+idx+png);
+                var link = baseUrl+idx+png;
+                $('body').append(`<img src='${link}' alt='pokemon${idx}'>`);
+                idx ++;
+            })
+
+        })
+        
+    
+    </script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <button>Click me to see the next Pokemon!</button>
+</body>
+</html>

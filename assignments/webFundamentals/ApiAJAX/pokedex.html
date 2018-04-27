@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../jQuery/jquery-3.3.1.js"></script>
+    <script>
+        $('document').ready(function(){
+            var baseUrl = 'http://pokeapi.co/media/sprites/pokemon/';
+            var png = '.png';
+            var idx = 1;
+
+            $('.one-by-one').click(function(){
+                var link = baseUrl+idx+png;
+                $('.poke-list').append(`<img src='${link}' alt='pokemon${idx}'>`);
+                idx ++;
+            })
+
+            $('.all').click(function(){
+                while(idx < 151){
+                    var link = baseUrl+idx+png;
+                    
+                    $('poke-list').append(`<img src='${link}' alt='pokemon${idx}'>`);
+                    idx ++;
+                }
+            })
+
+            $('img').click(function(e){
+                e.preventDefault();
+                var pokemon = this.alt;
+                console.log(pokemon);
+                var output = $.get("http://pokeapi.co/api/v2/"+pokemon+"/", function(result){},"json" );
+                console.log(output);
+            })
+
+
+        })
+
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="pokedexStyle.css">
+
+</head>
+<body>
+    <div class="buttons">
+        <button class="one-by-one">Click to see the pokemen one by one</button>
+        <button class="all">Click to see all pokemen</button>
+
+    </div>
+    <div class="pokemen">
+        <div class="poke-list">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="pokemon4">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="pokemon6">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" alt="pokemon27">
+
+        </div>
+        <div class="poke-dex">
+            <img src="http://pokeapi.co/media/sprites/pokemon/4.png">
+            <div class="info"></div>
+    
+        </div>
+        
+    </div>
+    
+</body>
+</html>
