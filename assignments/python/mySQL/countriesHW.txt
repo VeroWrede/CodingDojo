@@ -1,0 +1,52 @@
+SELECT name AS Country_Name 
+FROM countries c 
+JOIN languages l 
+ON c.code = l.country_code
+WHERE l.language = 'Slovene'
+
+
+SELECT COUNT(cit.name), c.name
+FROM countries c
+JOIN cities cit 
+ON c.code = cit.country_code
+
+
+SELECT c.name, cit.name, cit.population
+FROM cities cit
+JOIN countries c 
+ON c.code = cit.code
+WHERE cit.population > 500000
+
+
+SELECT l.language, c.name, l.percentage
+FROM countries c 
+JOIN languages l
+ON c.code = l.country_code
+WHERE l.percentage > 89
+ORDER BY percentage DESC
+
+
+SELECT c.name, c.surface_area, c.population
+FROM countries c
+WHERE c.surface_area < 501 AND c.population > 100000
+
+
+SELECT c.name, c.life_expectancy, c.government_form, c.capital
+FROM countries c
+WHERE c.government_form = 'constitutional monarchy' 
+    AND c.capital > 200 AND c.life_expectancy > 75
+
+
+SELECT cit.name, cit.population, cit.district, c.name
+FROM cities cit 
+JOIN countries c 
+ON cit.country_code = c.code
+WHERE cit.population > 500000 AND cit.district = 'Buenos Aires'
+
+
+SELECT COUNT(name), region
+FROM countries 
+GROUP BY region
+ORDER BY region DESC
+
+

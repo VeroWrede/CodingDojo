@@ -1,0 +1,8 @@
+ pip instal... -> go install ...
+ pip install Django==1.11.9 -> tells pip the exact version i want to get
+ freeze -> lists instsalled packages in alphabetical order
+ list -> lists all packages including editable packages
+ pip freeze > requirements.txt -> creates a text file that holds the installed packages?
+ unistall -> uninstalls. then 'show Django' wont show anything 
+ search  Flask -> shows all Flask versions and extensions
+ 

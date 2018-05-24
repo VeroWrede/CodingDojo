@@ -1,0 +1,15 @@
+my_dict = {
+  "Speros": "(555) 555-5555",
+  "Michael": "(999) 999-9999",
+  "Jay": "(777) 777-7777"
+}
+
+def dict_to_touple(dict):
+	res = [0]*len(dict)
+	idx = 0
+	for key, val in dict.iteritems():
+		res[idx] = (key, val)
+		idx += 1
+	return res
+
+print dict_to_touple(my_dict)

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>new ninja</title>
+	<script type="text/javascript" href="{{url_for('static', filename='style.css')}}"></script>
+</head>
+<body>
+	<h2>New User Form</h2>
+	<form action='/user' method='post'>
+		Name: <input type="text" name="name">
+		Gender: <input type="radio" name="gender" value="female">Female
+		<input type="radio" name="gender" value="seastar">Seastar
+		<input type="radio" name="gender" value="male">Male
+</body>
+</html>
