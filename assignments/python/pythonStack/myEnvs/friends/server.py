@@ -24,4 +24,10 @@ def show(friend_id):
 	data = {'specific_id': friend_id}
 	friends = mysql.query_db(query, data)
 	return render_template('index.html', one_friend = friends[0])
+@app.route('/remove_friend/<friend_id>', methods=['POST'])
+def delete(friend_id):
+    query = "DELETE FROM friends WHERE id = :id"
+    data = {'id': friend_id}
+    mysql.query_db(query, data)
+    return redirect('/')
 app.run(debug=True)
