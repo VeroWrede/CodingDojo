@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>survey form</title>
+</head>
+<body>
+	<p>this is the survey form index page</p>
+	<form action='/new_survey' method='post'>
+		{% csrf_token %}
+		Your Name: <input type="text" name="name"> <br>
+		Dojo Location: 
+		<select name="location">
+			<option value="seattle">Seattle</option>
+			<option value="washington">Washington</option>
+			<option value="japan">Japan</option>
+		</select> <br>
+		Favorite Language:
+		<select name="languages">
+			<option value="python">Python</option>
+			<option value="cs">C#</option>
+			<option value="js">JavaScript</option>
+		</select> <br>
+		Comment: <br>
+		<input type="text" name="comment"> <br><br>
+		<input type="submit">
+	</form>
+
+	<form action="/survey_form" method="get">
+		All submitted forms <input type="submit">
+	</form>
+
+</body>
+</html>
