@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your survey</title>
+</head>
+<body>
+	<div class="thanksMessage">
+		<h2>thanks for submitting the form!</h2>
+	</div>
+	<div class="form">
+		<h1>Submition</h1>
+		<p>Name: {{new_survey.name}}</p>
+		<p>Location: {{new_survey.location}}</p>
+		<p>Language: {{new_survey.languages}}</p>
+		{% if comment %}
+			<p>Comment: {{new_survey.comment}}</p>
+		{% endif %}
+		<a href="back">Back</a>
+	</div>
+</body>
+</html>
