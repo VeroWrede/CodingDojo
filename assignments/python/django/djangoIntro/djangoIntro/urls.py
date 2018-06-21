@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^random_word_generator/', include('apps.random_word_generator.urls')),
-    url(r'^survey_form/', include('apps.survey_form.urls'))
+    url(r'^survey_form/', include('apps.survey_form.urls')),
+    url(r'^session_words/', include('apps.session_words.urls'))
 ]

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>add word</title>
+</head>
+<body>
+	<h1>Add a new Word</h1>
+	<form action="/session_words/index" method="post">
+		{% csrf_token %}
+		<input type="text" name="input"><br>
+		Chose a color
+		<input type="radio" name="lime"><br>Lime
+		<input type="radio" name="green">Green<br>
+		<input type="radio" name="olive">Olive<br>
+		<input type="checkbox" name="big">BIGLY!<br>
+		<input type="submit" value="Add to session">
+	</form>
+
+
+</body>
+</html>
