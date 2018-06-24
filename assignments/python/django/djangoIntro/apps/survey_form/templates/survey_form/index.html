@@ -4,7 +4,7 @@
 	<title>survey form</title>
 </head>
 <body>
-	#{{ request.session.surveys }}
+	{{ request.session.surveys }}
 	{% if messages %}
 	<ul class="messages">
 		{% for message in messages %}

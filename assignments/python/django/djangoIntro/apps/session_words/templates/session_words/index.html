@@ -5,16 +5,23 @@
 </head>
 <body>
 	<h1>Add a new Word</h1>
-	<form action="/session_words/index" method="post">
+	<form action="/session_words/add_word" method="post">
 		{% csrf_token %}
-		<input type="text" name="input"><br>
-		Chose a color
-		<input type="radio" name="lime"><br>Lime
-		<input type="radio" name="green">Green<br>
-		<input type="radio" name="olive">Olive<br>
-		<input type="checkbox" name="big">BIGLY!<br>
-		<input type="submit" value="Add to session">
+		<input type="text" name="word"><br>
+		Chose a color <br>
+		<input type="radio" name="color">Lime<br>
+		<input type="radio" name="color">Green<br>
+		<input type="radio" name="color">Olive<br>
+		<input type="checkbox" name="font">BIGLY!<br>
+		<input type="submit" name="Add word">
 	</form>
+	<!-- <form action="/session_words/show_words" method="post">
+		{% csrf_token %}
+		<input type="submit" value="See all">
+		
+	</form> -->
+	<h2>In session</h2>
+	{{ request.session.words }}
 
 
 </body>

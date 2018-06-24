@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>your words</title>
+</head>
+<body>
+	<h1>Words in your session</h1>
+	<form action="/session_words/show_words" method="post">
+		{% csrf_token %}
+		<ul>
+			{%for entry in request.session.survey %}
+				<li>{{session_words.word}} - added on {{session.session_words.time}} {{session.session_words.date}}</li>
+			{% endfor %}
+		</ul>
+
+	{{ request.session.words }}
+
+</body>
+</html>

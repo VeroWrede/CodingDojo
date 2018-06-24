@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.random_word_generator',
-    'apps.survey_form'
+    'apps.survey_form',
+    'apps.session_words'
+
 ]
 
 MIDDLEWARE = [
