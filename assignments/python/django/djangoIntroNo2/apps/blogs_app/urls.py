@@ -3,9 +3,9 @@ import views
 
 urlpatterns = [
     url(r'^$', views.index),
-    url(r'^new/', views.new),
-    url(r'^create/', views.create),
-    url(r'^[0-9]{3}/edit/', views.edit),
-    url(r'^[0-9]{3}/delete/', views.delete),
-    url(r'^(?P<blog_num>\[0-9]{3})/', views.show)
+    url(r'^new/$', views.new),
+    url(r'^create/$', views.create),
+    url(r'^(?P<blog_num>\d+)/$', views.show),
+    url(r'^(?P<blog_num>\d+)/edit/$', views.edit),
+    url(r'^(?P<blog_num>\d+)/delete/$', views.delete),
 ]

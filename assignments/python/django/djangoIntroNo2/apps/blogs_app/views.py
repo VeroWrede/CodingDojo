@@ -12,15 +12,20 @@ def new(request):
 def create(request):
 	return render(request, 'blogs_app/create.html')
 
-def show(request):
-	number = { 
-		'wrongNum1' : 99,
-		'wrongNum2' : 84932
+def show(request, blog_num):
+	context = {
+		'blog_num' : blog_num
 	}
-	return render(request, 'blogs_app/show.html', number)
+	return render(request, 'blogs_app/show.html', context)
 
-def edit(request):
-	return render(request, 'blogs_app/edit.html')
+def edit(request, blog_num):
+	context = {
+		'blog_num' : blog_num
+	}
+	return render(request, 'blogs_app/edit.html', context)
 
-def delete(request):
-	return index(request)	 
+def delete(request, blog_num):
+	context = {
+		'blog_num' : blog_num
+	}
+	return render(request, 'blogs_app/delete.html', context)	 
