@@ -5,11 +5,12 @@
 </head>
 <body>
 	{{ request.session.surveys }}
+	
 	{% if messages %}
 	<ul class="messages">
 		{% for message in messages %}
 		<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-		{% endfor %}
+		{% endfor %}	
 	</ul>
 	{% endif %}
 	<p>this is the survey form index page</p>

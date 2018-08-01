@@ -12,7 +12,6 @@ def index(request):
 
 def new_survey(request):
 	if request.method == 'POST':
-		
 		new_survey = {}
 		new_survey['name'] = request.POST['name']
 		new_survey['location'] = request.POST['location']

@@ -22,10 +22,10 @@ def add_word(request):
 		}
 	else:
 		word = {}
-	messages.success(request, 'word added')
+	messages.error(request, 'Confirm password and password must match')
 	data = {
-			'new_word': word
-		}
+		'new_word': word
+	}
 	request.session['words'].append(word)
 	return render(request, 'session_words/show_words.html', data)
 

@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Add a new Word</h1>
-	<form action="/session_words/add_word" method="post">
+	<form action="/session_words/add_word" method="post" >
 		{% csrf_token %}
 		<input type="text" name="word"><br>
 		Chose a color <br>
