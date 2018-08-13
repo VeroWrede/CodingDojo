@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>welcome</title>
+        <link rel="stylesheet" type="text/css"  href="../../static/rand_word_app/style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div id="welcome" class="choiceContent">
+                <h3>Welcome!</h3>
+                <p>Here you can generate random words</p>
+            </div>
+            <div id="generate" class="choiceContent">
+                <h3>Generator</h3>
+                <p> placeholder for generated word? </p>
+            </div>
+            <div id="log" class="choiceContent">
+                <h3>Log</h3>
+                <p>these are the words generated so far</p>
+            </div>
+            <div id="delete" class="choiceContent">
+                <h3>Delete Log</h3>
+            </div>
+        </div>
+        <button class="tablink" onclick="openChoice('welcome', this, 'grey')" id="defaulOpen">Welcome</button>
+        <button class="tablink" onclick="openChoice('generator', this, 'grey')">Generator</button>
+        <button class="tablink" onclick="`openChoice('log', this, 'grey')">Log</button>
+        <button class="tablink" onclick="openChoice('delete', this, 'grey')">Delete</button>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+
+    <script src="js/rand_word_app/script.js"></script>
+
+</html>
