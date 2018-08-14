@@ -22,9 +22,7 @@
     text-align: center;
 }
 
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
-
-
+#welcome {background-color:red;}
+#generator {background-color:green;}
+#log {background-color:blue;}
+#delete {background-color:orange;}
