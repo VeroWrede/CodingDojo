@@ -1,0 +1,21 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Amadon</title>
+</head>
+<body>
+    {% for item in db }
+        <form action="/itemOne.html" method="post">
+            {% csrf_token %}
+            <label for="product" name="product">{{item.name}}</label>
+            <label for="price" name="price">{{item.price</label>
+            <select name="amount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <input type="submit" value="Buy!"
+        </form>
+    {% endfor %}
+</body>
+</html>
