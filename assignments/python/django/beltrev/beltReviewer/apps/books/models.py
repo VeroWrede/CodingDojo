@@ -13,6 +13,17 @@ class BookManger(models.Model):
         if not len(form_data['title']):
             errors.append('Must specify a title!')
             #more validiation
+
+        try:
+            book = self.get(id=book_id)
+            book.title = form_data['title']
+            book.author = form_data['author']
+            book.review = form_data['rewiev']
+            book.rating = form_data['rating']
+        except:
+            errors.append('book doesnt exist?!')
+            # i dont wanna check that??
+
         #try:
             #check if itr already exists??
         #exept:
@@ -25,7 +36,8 @@ class BookManger(models.Model):
 class Book(models.Model):
     name = models.CharField(max_Length=100)
     Author = models.ForeignKey(Author, related_name="books")
-    reviews = models.OneToOneField(Review, related_name="book_review")
+    reviews = models.ForeignKey(Review, related_name="book_review")
+    #do i have to do reviews?
     ratings_num = models.AutoField(max_lenght=100)
     ratings_avg = models.AutoField(max_Length=100)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -33,3 +45,5 @@ class Book(models.Model):
 
 def __str__(self):
     return self.name
+#def __repr__(self):
+    #return "<Book object: {} {} ".format(self.title, self.author)
