@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My books</title>
+</head>
+
+<body>
+    <a href="{% url 'books:new' %}" class="button">Add a new book!</a>
+    <br>
+    
+    <br>
+    <h1> Hello {{user.name}}</h1>
+    
+    {% for book in books %}
+        <h1>{{book.title}}</h1>
+        <h3>{{book.author}}</h3>
+        <h3>{{book.rating}}</h3>
+        <h4>{{book.rating_num}}</h4>
+        <p>***************************</p>
+    {% endfor %}    
+
+
+</body>
+
+</html>

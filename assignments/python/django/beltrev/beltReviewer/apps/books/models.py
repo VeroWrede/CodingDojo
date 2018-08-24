@@ -13,6 +13,18 @@ class BookManger(models.Model):
         if not len(form_data['title']):
             errors.append('Must specify a title!')
             #more validiation
+        
+        if errors:
+            return (False, errors)
+        else:
+            book = self.create(
+                title = form_data['title'],
+                author = form_data['author'],
+                #....
+            )
+            return (True, book)
+
+'''
 
         try:
             book = self.get(id=book_id)
@@ -29,14 +41,16 @@ class BookManger(models.Model):
         #exept:
             #errors.append('Book already in DB)
             #return (False, errors)
-    
+'''
+
     def delete_book(self, user_id):
         return 'NEVER EVER DELETE A BOOK!!! YOU SHALL BURN IN HELL...'
 
 class Book(models.Model):
-    name = models.CharField(max_Length=100)
-    Author = models.ForeignKey(Author, related_name="books")
-    reviews = models.ForeignKey(Review, related_name="book_review")
+    title = models.CharField(max_Length=100)
+    author = models.CharField(max_length=100)
+    #reviews = models.ForeignKey(Review, related_name="book_review")
+    #put this foreu key into review model
     #do i have to do reviews?
     ratings_num = models.AutoField(max_lenght=100)
     ratings_avg = models.AutoField(max_Length=100)

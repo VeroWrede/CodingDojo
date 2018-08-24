@@ -1,4 +1,4 @@
-"""beltReviewer URL Configuration
+"""beltReviewerTwo URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('apps.books.urls', namespace='books'))
+    url(r'^admin/', admin.site.urls)
+    ,url(r'^books/', include('apps.books.urls', namespace='books'))
+    ,url(r'^', include('apps.users.urls', namespace='users'))
 ]

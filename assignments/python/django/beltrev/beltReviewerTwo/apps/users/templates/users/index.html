@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Homepage</title>
+</head>
+<body>
+    <h1>Welcome {{user.name}}</h1> 
+    
+    <p>create book button</p>
+
+    <br>
+    <a href="{% url 'books:new' %}" class="button">Add a new book</a>
+    <a href="{% ulr 'users:logout' %}" class="button">Logout</a>
+     {% for book in books %}
+        <h1>{{book.title}}</h1>
+        <h3>{{book.author}}</h3>
+        <h3>{{book.rating}}</h3>
+        <h4>{{book.rating_num}}</h4>
+        <p>***************************</p>
+    {% endfor %}
+</body>
+</html>

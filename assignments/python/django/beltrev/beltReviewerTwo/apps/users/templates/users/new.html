@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beltreviewer</title>
+</head>
+<body>
+    <h2>welcome to the Beltreviewer</h2>
+    <h3>create an account or log in</h3>
+    <br>
+    <hr>
+    <h3>New User form</h3>
+    <form action="{% url 'users:create' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Your name">
+        <br>
+        <input type="email" name="email" placeholder="email address">
+        <br>
+        <label for="password">password</label>
+        <br>
+        <input type="password" name="password">
+        <br>
+        <label for="confimation">confirm password</label>
+        <br>
+        <input type="password" name="confimation" placeholder="rubSomeBaconOnIt">
+        <input type="submit" value="Register">
+    </form>
+    <hr>
+    <h3>Login </h3>
+    <form action="{% url 'users:login' %}" method="post">
+        {% csrf_token %}
+        <label for="email">email</label>
+        <br>
+        <input type="email" name="email" placeholder="Your email address">
+        <br>
+        <label for="password">password</label>
+        <br>
+        <input type="password" name="password" placeholder="rubSomeBaconOnIt">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>
