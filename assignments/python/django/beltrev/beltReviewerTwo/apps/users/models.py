@@ -14,7 +14,7 @@ class UserManager(models.Manager):
     def validate_and_create_user(self, form_data):
         errors = []
 
-        if not len(form_data['name']):
+        if not len(form_data['username']):
             errors.append('Must enter a user name')
         if not EMAIL_REGEX.match(form_data['email']):
             errors.append('invalid email')
