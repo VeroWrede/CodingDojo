@@ -22,7 +22,7 @@ class UserManager(models.Manager):
             errors.append('invalid email')
         if not len(form_data['password']):
             errors.append('must enter a password')
-        if form_data['password'] != form_data['confirm']:
+        if form_data['password'] != form_data['confirmation']:
             errors.append('Passwords dont match')
         
 

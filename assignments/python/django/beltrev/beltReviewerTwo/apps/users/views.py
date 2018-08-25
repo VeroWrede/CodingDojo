@@ -20,6 +20,7 @@ def new(req):
 def create(req):
     if req.method != 'POST':
         return redirect('user:new')
+        print req.POST
     valid, result = User.objects.validate_and_create_user(req.POST)
     if not valid:
         for err in result:
