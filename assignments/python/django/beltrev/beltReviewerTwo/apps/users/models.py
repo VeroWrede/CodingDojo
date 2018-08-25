@@ -14,6 +14,8 @@ class UserManager(models.Manager):
     def validate_and_create_user(self, form_data):
         errors = []
 
+        print form_data
+
         if not len(form_data['username']):
             errors.append('Must enter a user name')
         if not EMAIL_REGEX.match(form_data['email']):
@@ -36,8 +38,10 @@ class UserManager(models.Manager):
             user = self.create(
                 name = form_data['name'],
                 email = form_data['email'],
-                pw_hash = form_data['pw_hash']
+                pw_hash = pw_hash
             )
+        
+        return (True, user.id)
     
     def validate_and_update_user(self, user_id, form_data):
         errors =[]
@@ -48,8 +52,6 @@ class UserManager(models.Manager):
             errors.append('invalid email')
         if not len(form_data['password']):
             errors.append('Must enter a password')
-        if form_data['password'] != form_data['confirm']:
-            errors.append('Passwords dont match')
         
         if errors:
             return (False, errors)

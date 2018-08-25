@@ -6,7 +6,6 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 
 from .models import User
-
 def index(req):
     if 'user_id' not in req.session:
         return redirect('users:new')
