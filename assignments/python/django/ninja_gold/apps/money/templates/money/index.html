@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2>available money: {{ money }} </h2>
+    
+    <div class="game">
+        <h3>Farm</h3>
+        <p>earns 10 - 20 golds</p>
+        <form action=" {% url 'money:farm' %}" method="post">
+            <input type="submit" value="Dig in!">
+        </form>
+    </div>
+    <div class="game">
+        <h3>Cave</h3>
+        <p>earns 5 - 10 golds</p>
+        <form action=" {% url 'money:cave' %}" method="post">
+            <input type="submit" value="Dig in!">
+        </form>
+    </div>
+    <div class="game">
+        <h3>House</h3>
+        <p>earns 2 - 5 golds</p>
+        <form action=" {% url 'money:house' %}" method="post">
+            <input type="submit" value="Dig in!">
+        </form>
+    </div>
+    <div class="game">
+        <h3>Casino</h3>
+        <p>+/- 0 - 50 golds</p>
+        <form action=" {% url 'money:casino' %}" method="post">
+            <input type="submit" value="Dig in!">
+        </form>
+    </div>
+
+</body>
+</html>
