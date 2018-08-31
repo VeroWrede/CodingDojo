@@ -37,21 +37,23 @@ class UserManager(models.Manager):
                 dob=dob,
                 pw_hash=pw_hash
             )
-            return (True, user.user_name)
+            print "*"*30
+            print user.id
+            return (True, user.id)
 
-    def login(req):
-        pass  
+    # def login(req):
+    #     pass  
     
-    def modify(req):
-        pass
+    # def modify(req):
+    #     pass
 
 class User(models.Model):
-    name = models.CharField(max_length=100),
-    user_name = models.CharField(max_length=100),
-    dob = models.DateField(),
-    pw_hash = models.CharField(max_length=500),
-    created_at = models.DateTimeField(auto_now_add=True),
-    last_mod = models.DateTimeField(auto_now=True),
+    name = models.CharField(max_length=100)
+    user_name = models.CharField(max_length=100)
+    dob = models.DateField()
+    pw_hash = models.CharField(max_length=500)
+    created_at = models.DateTimeField(auto_now_add=True)
+    last_mod = models.DateTimeField(auto_now=True)
     objects = UserManager()
 
 
