@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.db import models
 import bcrypt
 from datetime import datetime
+from ..pokes
 
 class UserManager(models.Manager):
     def validate_and_create_user(self, form_data):

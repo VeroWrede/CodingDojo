@@ -30,26 +30,33 @@ def create(req):
 def new(req):
     return render(req, 'users/new.html')
 
-def show(req, user_name):
+def show(req, user_id):
   if 'user_id' not in req.session:
     return redirect('users:new')
-    
+
   try:
-    user = User.objects.get(user_name=user_name)
-    print "*"*30
-    print user
-    
+    user = User.objects.get(id=user_id)
   except:
     return redirect('users:index')
 
   context = {
-    'name': user.name,
-    'user_name': user.user_name,
-    'dob': user.dob,
+    'user': User.objects.get(id=user_id)
   }
 
-  json_data = json.dumps(context)
-  return HttpResponse(json_data, content_type="application/json", status=200)
+  return render(req, 'users/show.html', context)
 
+def edit(req, user_id):
+  if 'user_id' not in req.session:
+    return redirect('users:new')
+
+  try:
+    user = User.objects.get(id=user_id)
+  except:
+    return redirect('users:index')
+
+  context = {
+    'user': user
+  }
+  return render(req, 'users/edit.html', context)
     
 
