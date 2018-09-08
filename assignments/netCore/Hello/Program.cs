@@ -6,7 +6,12 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int a = 80;
+            int b = 90;
+            if ( !a.Equals(b)) {
+                Console.WriteLine("NO");
+            };
+            Console.WriteLine(a.Equals(b));
         }
     }
 }
