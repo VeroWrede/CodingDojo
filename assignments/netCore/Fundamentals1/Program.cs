@@ -34,8 +34,8 @@ namespace Fundamentals1
 
             for (int i = 0; i <= 100; i++) {
                 double temp3 = i / 3;
-                double temp5 = i / 5;
                 Console.WriteLine(temp3);
+                double temp5 = i / 5;
 
                 // if ( (temp3 - (int)temp3 > 0) && (temp5 - (int)temp5 > 0) ) {
                 //     Console.WriteLine("fizzBuzz");
