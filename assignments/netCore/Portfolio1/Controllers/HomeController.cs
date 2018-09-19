@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Portfolio1.Controllers
 {
@@ -7,6 +8,7 @@ namespace Portfolio1.Controllers
         [HttpGet("")]
         public IActionResult Index() 
         {
+            Console.WriteLine("in controller");
             return View();
         }
     }

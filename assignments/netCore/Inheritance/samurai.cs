@@ -4,7 +4,6 @@ namespace Inheritance
 {
     public class Samurai : Human 
     {
-        public int health;
         public int chance;
 
         public Samurai(string person) : base(person) 
@@ -26,7 +25,7 @@ namespace Inheritance
                     foe.health = 0;
                 }
             } else {
-                if (chance = 3)
+                if (chance == 3)
                 {
                     foe.health = 1;
                 }
