@@ -1,0 +1,18 @@
+button {
+    font-size: 50px;
+    height: 60px;
+    margin: 20px 0;
+}
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: double olive;;
+}
+
+.vote-count {
+    background: olive;
+    padding: 10px;
+    border-radius: 30px;
+}

@@ -1,0 +1,17 @@
+.card {
+    margin: 100px auto;
+    width: 300px;
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+}
+
+.card-body {
+    width: 300px;
+    
+}
+
+.card-img-top {
+    background-color: black;
+    padding: 50px 140px;
+}

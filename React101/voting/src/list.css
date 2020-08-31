@@ -1,0 +1,8 @@
+.list {
+    border-style: double;
+    border-color: olive;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-bottom: none;
+}
