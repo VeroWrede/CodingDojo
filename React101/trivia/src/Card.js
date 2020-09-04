@@ -10,11 +10,10 @@ class Card extends React.Component {
             question: "what is this?",
             tip: "it turns into somehting that lives on land and in water"
         }
-        this.TurnCard = this.TurnCard.bind(this);
     }
 
 
-    TurnCard() {
+    turnCard() {
         this.setState(state => ({
             isTurned: !state.isTurned}));
     }
@@ -22,13 +21,11 @@ class Card extends React.Component {
     render () {
         return (
             <div>
-                <button onClick={() => this.setState({ count: this.state.count + 1 })}>Click me!</button>
-                <p>{this.state.count}</p>
                 
-                <button className="card" onClick={ () => this.turnCard() }>DOOOP
-                </button>
+                <button className="card" onClick={ () => this.turnCard() }>
                     <h1>{this.state.isTurned ? "Tip" : "Question"}</h1>
                     <h3>{this.state.isTurned ? this.state.tip : this.state.question}</h3>
+                </button>
             </div>
         )
     }
